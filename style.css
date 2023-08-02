@@ -1,0 +1,104 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Sofia Sans Condensed", sans-serif;
+}
+nav {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background-color: #0065c3;
+  font-weight: 700;
+  font-size: 14px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  padding: 0px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.right a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 100px;
+  padding: 5px 35px;
+  font-size: 14px;
+  word-spacing: 3px;
+  transition: 0.5s;
+}
+.container {
+  /* border: 2px solid black; */
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.leftimg {
+  background: #5999d4;
+  width: 35%;
+  padding: 40px;
+}
+
+.upper {
+  background-color: #14148bf6;
+  height: 47%;
+}
+.lower {
+  background-color: #14148bf6;
+  height: 47%;
+  margin: 31px 0px 0px 1px;
+}
+figcaption {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  word-spacing: 3px;
+  padding-top: 5px;
+}
+.rightimg img {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+#ban {
+  width: 550px;
+  height: 155px;
+  position: relative;
+  bottom: 190px;
+  left: 290px;
+}
+.logo {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.right a:hover {
+  background-color: white;
+  color: #0065c3;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  display: flex;
+  margin: auto;
+  background-color: white;
+  transition: 0.3s;
+}
+.logo:hover {
+  filter: brightness(140%);
+}

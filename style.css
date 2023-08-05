@@ -53,12 +53,15 @@ nav ul li a {
 .upper {
   background-color: #14148bf6;
   height: 47%;
+  transition: all 0.4s ease-in-out;
 }
 .lower {
   background-color: #14148bf6;
   height: 47%;
   margin: 31px 0px 0px 1px;
+  transition: all 0.4s ease-in-out;
 }
+
 figcaption {
   color: white;
   text-align: center;
@@ -81,7 +84,16 @@ figcaption {
 }
 .logo {
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.4s ease-in-out;
+}
+/* HOVER EFFECT */
+
+.upper:hover {
+  transform: scale(1.05);
+}
+
+.lower:hover {
+  transform: scale(1.02);
 }
 .right a:hover {
   background-color: white;
@@ -100,5 +112,5 @@ nav ul li a::after {
   transition: 0.3s;
 }
 .logo:hover {
-  filter: brightness(140%);
+  transform: rotate(360deg);
 }
